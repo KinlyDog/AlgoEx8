@@ -54,7 +54,7 @@ public class HashTable {
         int ind = hashFun(value);
         int count = 0;
 
-        while (!slots[ind].equals(value) && count < size) {
+        while (slots[ind] != null && !slots[ind].equals(value) && count < size) {
             ind += step;
 
             if (ind >= size) {
@@ -64,7 +64,7 @@ public class HashTable {
             count++;
         }
 
-        if (slots[ind].equals(value)) {
+        if (slots[ind] != null && slots[ind].equals(value)) {
             return ind;
         }
 
