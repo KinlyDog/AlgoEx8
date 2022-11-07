@@ -20,20 +20,15 @@ public class HashTable {
 
     public int seekSlot(String value) {
         int ind = hashFun(value);
-        int count = 0;
 
-        while (slots[ind] != null && count < size) {
-            ind += step;
-
+        for (int i = 0; i < size; i++, ind += step) {
             if (ind >= size) {
                 ind -= size;
             }
 
-            count++;
-        }
-
-        if (slots[ind] == null) {
-            return ind;
+            if (slots[ind] == null) {
+                return ind;
+            }
         }
 
         return -1;
@@ -50,22 +45,21 @@ public class HashTable {
         return -1;
     }
 
-    public int find(String value) {
-        int ind = hashFun(value);
-        int count = 0;
+    public int find(String key) {
+        int ind = hashFun(key);
 
-        while (slots[ind] != null && !slots[ind].equals(value) && count < size) {
-            ind += step;
-
+        for (int i = 0; i < size; i++, ind++) {
             if (ind >= size) {
                 ind -= size;
             }
 
-            count++;
-        }
+            if (slots[ind] == null) {
+                return -1;
+            }
 
-        if (slots[ind] != null && slots[ind].equals(value)) {
-            return ind;
+            if (slots[ind].equals(key)) {
+                return ind;
+            }
         }
 
         return -1;
