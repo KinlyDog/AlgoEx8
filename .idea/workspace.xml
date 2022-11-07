@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="610b7959-4b63-4141-8b67-4498761545d4" name="Changes" comment="Update project&#10;Create tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="610b7959-4b63-4141-8b67-4498761545d4" name="Changes" comment="Update project, simply solution." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667827319025</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update project, simply solution.">
+      <created>1667842884242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667842884242</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,15 +108,16 @@
     <MESSAGE value="Create / complete project" />
     <MESSAGE value="Update find func" />
     <MESSAGE value="Update project&#10;Create tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project&#10;Create tests" />
+    <MESSAGE value="Update project, simply solution." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project, simply solution." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/HashTableTest.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="27" />
+          <line>14</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
