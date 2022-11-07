@@ -8,8 +8,8 @@ public class HashTable {
         this.step = step;
         slots = new String[size];
 
-        for (int i = 0; i < size; i++) {
-            slots[i] = null;
+        for (String str : slots) {
+            str = null;
         }
     }
 
