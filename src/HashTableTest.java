@@ -24,7 +24,7 @@ class HashTableTest {
         int tmp = ht.seekSlot("0");
 
         for (int i = 0; i < ht.size; i++) {
-            ht.put(String.valueOf(i));
+            ht.put(String.valueOf(0));
         }
 
         assertTrue(ht.find("0") == tmp);

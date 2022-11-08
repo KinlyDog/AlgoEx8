@@ -29,6 +29,11 @@ public class HashTable {
             if (slots[ind] == null) {
                 return ind;
             }
+
+            // fix after NativeDictionary (ok?)
+            if (slots[ind].equals(value)) {
+                return -1;
+            }
         }
 
         return -1;
@@ -45,10 +50,10 @@ public class HashTable {
         return -1;
     }
 
-    public int find(String key) {
-        int ind = hashFun(key);
+    public int find(String value) {
+        int ind = hashFun(value);
 
-        for (int i = 0; i < size; i++, ind++) {
+        for (int i = 0; i < size; i++, ind += step) {
             if (ind >= size) {
                 ind -= size;
             }
@@ -57,7 +62,7 @@ public class HashTable {
                 return -1;
             }
 
-            if (slots[ind].equals(key)) {
+            if (slots[ind].equals(value)) {
                 return ind;
             }
         }
