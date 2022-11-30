@@ -30,7 +30,6 @@ public class HashTable {
                 return ind;
             }
 
-            // fix after NativeDictionary (ok?)
             if (slots[ind].equals(value)) {
                 return -1;
             }
